@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#grid_wrapper{
+display: grid;
+    grid-template-areas: 
+    "he na"
+    "ar ar"
+    "s1 s2" 
+    "fo fo";
+}
+header{
+    grid-area: he;
+    background-color: aqua;
+    height: 70px;
+    
+}
+#burger_menu div{
+    width: 25px;
+    height: 4px;
+    background-color: rgb(54, 36, 149);
+    margin: 7px;
+    border-radius: 10%;
+    transition: all 0.5s;
+    margin-right: 30px;
+  
+}
+
+
+#nav-rubriker li{
+    list-style: none;
+}
+#nav-rubriker{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 200px;
+    background-color: lightgreen;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: -500px;
+    right: 0px;
+    transition: all 0.7s;
+}
+
+/* .burger_toggle #burger_line_1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger_toggle #burger_line_2 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav_active {
+    transform: translateY(580px);
+} */
+
+nav{
+    background-color: lightgreen;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-area: na;
+    height: 70px
+
+
+}
+article{
+grid-area: ar;
+background-color: bisque;
+height: 300px;
+flex-direction: column;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+#article_text{
+    margin-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#article_rubrik{
+    
+}
+#boka_tid{
+    background-color: azure;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+
+#section_1{
+    grid-area: s1;
+    background-color: blueviolet;
+    height: 300px;
+}
+#section_2{
+   display: flex;
+    grid-area: s2;
+    background-color: cadetblue;
+    flex-direction: column;
+}
+
+footer{
+    grid-area: fo;
+    background-color: lightcyan;
+}
