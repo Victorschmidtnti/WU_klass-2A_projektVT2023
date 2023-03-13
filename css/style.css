@@ -63,11 +63,16 @@ header{
     top: -500px;
     right: 0px;
     transition: all 0.7s;
+    z-index: 1;
 }
 
 #nav-rubriker a{
     text-decoration: none;
     color: rgb(255, 255, 255);
+}
+a{
+    text-decoration: none;
+   color: rgb(255, 255, 255);
 }
 
 
@@ -105,8 +110,9 @@ justify-content: center;
 }
 
 #boka_tid{
-    background-color: azure;
-    border-width: 5px;
+    background-color: rgb(0, 0, 0);
+    border-width: 2px;
+    font-size: 40px;
     border-style: solid;
     border-radius: 10px;
 }
@@ -220,14 +226,95 @@ header{
 #article_frisorer{
     grid-area: af;
     height: 600px;
+    flex-direction: column;
+    display: flex;
+
+}
+
+#top_row{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
 }
-.bild_frisorer{
+
+#bottom_row{
+    display: flex;
+    flex-direction: row;
+}
+
+#section_gustav{
+    flex-direction: column;
+    display: flex;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    transition: transform .2s;
+}
+
+#section_gustav:hover{
+    transform: scale(1.1);
+}
+
+
+#section_jacob{
+    flex-direction: column;
+    display: flex;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    transition: transform .2s;
+
+}
+
+#section_jacob:hover{
+    transform: scale(1.1);
+}
+
+#section_jenny{
+    flex-direction: column;
+    display: flex;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    transition: transform .2s;
+}
+
+#section_jenny:hover{
+    transform: scale(1.1);
+}
+
+#section_joseph{
+    flex-direction: column;
+    display: flex;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    transition: transform .2s;
+}
+
+#section_joseph:hover{
+    transform: scale(1.1);
+}
+#bild_gustav{
     height: 250px;
     margin: 10px;
-    margin-right: 100px;
+   
+}
+#bild_jacob{        
+    height: 250px;
+    margin: 10px;
+    right: 10px;
+    top: 20px;
+}
+#bild_jenny{
+    height: 250px;
+    margin: 10px;
+   top: 20px;
+   left: 10px;
+  
+}
+#bild_joseph{
+    height: 250px;
+    margin: 10px;
     
+    
+}
+
+#boka_tid_jacob{
+    color: aliceblue;
 }
