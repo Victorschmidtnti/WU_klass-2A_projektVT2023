@@ -179,42 +179,6 @@ color: rgb(255, 255, 255);
 width: 50%;
 }
 
-@media screen and (min-width: 800px){
-
-    #burger_menu{
-        display: none;
-    }
-
-    #grid_wrapper{
-        
-    grid-template-areas: 
-    "he he"
-    "na na"
-    "ar ar"
-    "s1 s2"
-    "fo fo";
-    }
-
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-#nav-rubriker {
-    flex-direction: row;
-    height: 80px;
-    width: 100%;
-    top: 70px;
-    right: 0px;
-    transition: none;
-}
-.nav_active{
-    transform: translateY(0px);
-}
-
-}   
 
 #grid_wrapper_frisorer{
     display: grid;
@@ -225,7 +189,7 @@ header{
 }
 #article_frisorer{
     grid-area: af;
-    height: 600px;
+    height: 700px;
     flex-direction: column;
     display: flex;
 
@@ -234,6 +198,8 @@ header{
 #top_row{
     display: flex;
     flex-direction: row;
+  
+    
 }
 
 #bottom_row{
@@ -315,6 +281,324 @@ header{
     
 }
 
-#boka_tid_jacob{
-    color: aliceblue;
+#article_boka_tid{
+    flex-direction: column;
+    display: flex;
+    height: 400px;
+    justify-content: space-evenly;
+    background-image: url(../img/boka_tid/bakgrund_till_article_boka_tid.png);
+    background-size: cover;
+   
+    
 }
+
+
+
+#boka_tid_jacob{
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    display: flex;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: rgb(255, 255, 255, 0.6);
+
+ 
+}
+
+#boka_tid_gustav{
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    display: flex;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 10px;
+    background-color: rgb(255, 255, 255, 0.6);
+  
+    
+}
+
+#boka_tid_jenny{
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    display: flex;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 10px;
+    background-color: rgb(255, 255, 255, 0.6);
+}
+
+#boka_tid_joseph{
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    display: flex;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 15px;
+    background-color: rgb(255, 255, 255, 0.6);
+   
+
+}
+li{
+    list-style: none;
+}
+#top_row_boka_tid{
+display: flex;
+flex-direction: row;
+border-radius: 9px;
+border-color: rgb(255, 255, 255);
+border-style: solid;
+transition: transform .2s;
+}
+
+#bottom_row_boka_tid{
+display: flex;
+flex-direction: row;
+border-radius: 9px;
+border-color: rgb(255, 255, 255);
+border-style: solid;
+transition: transform .2s;
+}
+
+.tid{
+    color: black;
+}
+
+.boka_tid_rubrik{
+    color: black;
+}
+
+#top_row_boka_tid:hover{
+    transform: scale(1.1);
+}
+
+#bottom_row_boka_tid:hover{
+    transform: scale(1.1);
+}
+
+#grid_wrapper_hitta_hit{
+    display: grid;
+grid-template-areas: 
+"he na"
+"ah ah"
+"sh sh"
+"fo fo";
+}
+
+#article_hitta_hit{
+grid-area: ah;
+height: 150px;
+padding-left: 40px;
+padding-right: 40px;
+
+}
+
+#section_hitta_hit{
+grid-area: sh;
+background-color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.hitta_hit_text{
+color: aliceblue;
+padding-bottom: 30px;
+}
+
+#hitta_hit_rubrik2{
+font-size: 20px;
+color: aliceblue;
+}
+
+#hitta_hit_rubrik{
+color: aliceblue;
+font-size: 30px;
+}
+
+#maps{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+   
+ 
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 800px){
+
+    #burger_menu{
+        display: none;
+    }
+
+    #grid_wrapper{
+        
+    grid-template-areas: 
+    "he he"
+    "na na"
+    "ar ar"
+    "s1 s2"
+    "fo fo";
+    }
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+
+#nav-rubriker {
+    flex-direction: row;
+    height: 80px;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    transition: none;
+    font-size: 30px;
+}
+
+
+.nav_active{
+    transform: translateY(0px);
+}
+
+footer{
+    font-size: 30px;
+}
+
+#section_1{
+height: 700px;
+}
+
+#bild1{
+height: 300px;
+}
+
+#bild2{
+height:400px;
+}
+#grid_wrapper_frisorer{
+    grid-template-areas: 
+    "he he"
+    "na na"
+    "af af"
+    "fo fo";
+}
+
+#article_frisorer{
+flex-direction: row;
+}
+#top_row{
+    border-color: aliceblue;
+    border-style: solid;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+   
+}
+
+#bottom_row{
+    border-color: aliceblue;
+    border-style: solid;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+#bild_gustav{
+    height: 350px;
+    margin: 10px;
+   
+}
+#bild_jacob{        
+    height: 350px;
+    margin: 10px;
+    right: 10px;
+    top: 20px;
+}
+#bild_jenny{
+    height: 350px;
+    margin: 10px;
+   top: 20px;
+   left: 10px;
+  
+}
+#bild_joseph{
+    height: 350px;
+    margin: 10px;
+    
+}
+
+.namn{
+    font-size: 25px;
+}
+
+#article_boka_tid{
+    height: 900px;
+    background-size: contain;
+    
+}
+#boka_tid_gustav{
+   padding-right: 40px; 
+   padding-top: 30px;
+   padding-bottom: 30px;
+
+}
+
+#boka_tid_joseph{
+padding-left: 40px;
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
+#boka_tid_jacob{
+padding-left: 40px;
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
+#boka_tid_jenny{
+padding-right: 40px;
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
+
+li{
+    list-style: none;
+}
+
+.boka_tid_rubrik{
+font-size: 45px;
+}
+
+.tid{
+    font-size: 40px;
+}
+#top_row_boka_tid{
+   
+  
+}
+}   
